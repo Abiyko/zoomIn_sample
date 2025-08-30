@@ -13,12 +13,11 @@ function zoomIn(imageElement) {
     zoomedImage.src = imageElement.src;
     zoomedImage.className = 'zoomed-image';
 
-    closeButton.onclick = () => {
-    overlay.remove();
-    };
+    closeButton.onclick = () => overlay.remove();
 
     overlay.appendChild(closeButton);
     overlay.appendChild(zoomedImage);
 
     document.body.appendChild(overlay);
+
 }
